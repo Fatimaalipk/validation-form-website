@@ -1,0 +1,151 @@
+*{
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image: url(./validation.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    
+}
+
+.container{
+    background-color:lightsalmon;
+  color: green;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    -webkit-border-radius: 10px;
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0, 014 alpha) ;
+    overflow: hidden;
+    width: calc(100vw - 60vw);
+    max-width: 100%;
+   border: 5px solid green;
+   margin: auto;
+   margin-top: 20vh;
+  
+}
+.header{
+    background: linear-gradient(45deg,purple,orangered,blue,green);
+    padding: 30px 0;
+  
+ 
+}
+.container h2{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    align-items: center;  
+   text-align: center;
+}
+.form{
+    padding: 40px;
+  
+  
+}
+.form-control {
+   margin-bottom: 30px;
+   position: relative; 
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+    
+}
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0 ;
+    border-radius: 5px;
+    display: block;
+    font-family: var(--myfont);
+    font-size: 14px;
+    padding: 12px;
+ 
+}
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+
+}
+.form-control.success input{
+border-color: green;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control i{
+    position: absolute;
+    right: 12px;
+    top: 38px;
+    color: green;
+    visibility: hidden;
+}
+.form-control.success i.fa-circle-check{
+    color: green;
+    visibility: visible;
+}
+.form-control.error i.fa-exclamation{
+color: red;
+    visibility: visible;
+}
+.form-control small{
+    visibility: hidden;
+    color: red;
+    position: absolute;
+    left: 0;
+    visibility: hidden;
+}
+.form-control.error small{
+    visibility: visible;
+}
+
+
+
+.form .btn{
+    background-color: green;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+}
+.form .btn:hover{
+    background: linear-gradient(45deg,purple,orangered,blue,green);
+}
+@media(max-width:768px){
+    body{
+        background-image: url(./validation.jpg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        /* min-height: 100vh; */
+        width: 100%;
+        
+        
+    }
+    .container{
+        border-radius: 10px;
+        font-size: 1.2rem;
+        width: calc(100vw - 10vw);
+     
+      
+    }
+
+}
